@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
+    <groupId>be.thibber.gamification</groupId>
     <artifactId>gamified-testing</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -22,31 +22,4 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.5.2</version>
-            </plugin>
-            <plugin>
-                <groupId>org.pitest</groupId>
-                <artifactId>pitest-maven</artifactId>
-                <version>1.18.2</version>
-                <configuration>
-                    <outputFormats>
-                        <outputFormat>XML</outputFormat>
-                        <outputFormat>HTML</outputFormat>
-                    </outputFormats>
-                    <targetClasses>
-                        <param>org.example.*</param>
-                    </targetClasses>
-                    <targetTests>
-                        <param>org.example.*Test</param>
-                    </targetTests>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 </project>

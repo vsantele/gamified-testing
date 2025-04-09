@@ -1,6 +1,6 @@
-package org.example;
+package be.thibber.gamification;
 
-import org.example.exceptions.FullParkingException;
+import be.thibber.gamification.exceptions.FullParkingException;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,9 +34,8 @@ public class Parking {
 
     /**
      * @param capacity Parking capacity
-     * @throws IllegalArgumentException When {@code capacity} is less than 0
      */
-    public void setCapacity(int capacity) throws IllegalArgumentException{
+    public void setCapacity(int capacity){
         if(capacity < 0){
             throw new IllegalArgumentException("Capacity must be greater than or equal to 0");
         }
