@@ -70,4 +70,11 @@ public class Parking {
     public boolean isFull(){
         return vehicles.size() >= capacity;
     }
+
+    /**
+     * @return Number of available spots
+     */
+    public int getAvailableSpots() {
+        return capacity - vehicles.size();
+    }
 }
