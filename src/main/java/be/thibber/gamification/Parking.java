@@ -72,6 +72,13 @@ public class Parking {
     }
 
     /**
+     * @return {@code true} if the parking is empty, {@code false} otherwise
+     */
+    public boolean isEmpty(){
+        return vehicles.isEmpty();
+    }
+
+    /**
      * @return Number of available spots
      */
     public int getAvailableSpots() {
