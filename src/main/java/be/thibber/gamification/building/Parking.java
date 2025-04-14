@@ -1,28 +1,35 @@
-package be.thibber.gamification;
+package be.thibber.gamification.building;
 
+import be.thibber.gamification.vehicle.Vehicle;
 import be.thibber.gamification.exceptions.FullParkingException;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Parking {
+public class Parking extends Building {
     private int capacity;
     private final List<Vehicle> vehicles;
 
     /**
+     * @param name Name of the parking
+     * @param surface Surface of the parking
      * @param capacity Capacity of parking
      * @param vehicles Default vehicles in the parking
      */
-    public Parking(int capacity, List<Vehicle> vehicles) {
-        setCapacity(capacity);
+    public Parking(String name, double surface, int capacity, List<Vehicle> vehicles) {
+        super(name, surface, 1);
+
         this.vehicles = vehicles;
+        setCapacity(capacity);
     }
 
     /**
+     * @param name Name of the parking
+     * @param surface Surface of the parking
      * @param capacity Capacity of parking
      */
-    public Parking(int capacity){
-        this(capacity, new ArrayList<>());
+    public Parking(String name, double surface, int capacity){
+        this(name, surface, capacity, new ArrayList<>());
     }
 
     /**

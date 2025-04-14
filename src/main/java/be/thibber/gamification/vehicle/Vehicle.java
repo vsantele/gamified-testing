@@ -1,4 +1,4 @@
-package be.thibber.gamification;
+package be.thibber.gamification.vehicle;
 
 /**
  * The {@code Vehicle} class represents a vehicle with a modifiable speed.
@@ -12,13 +12,22 @@ public class Vehicle {
     private double speed;
 
     /**
-     * Constructs a new {@code Vehicle} with the specified initial speed.
+     * Constructs a new {@code Vehicle} with the specified initial speed & seats count.
      *
      * @param speed the initial speed of the vehicle; must be greater than or equal to 0
      * @throws IllegalArgumentException if {@code speed} is negative
      */
     public Vehicle(double speed) {
         setSpeed(speed);
+    }
+
+    /**
+     * Constructs a new {@code Vehicle}
+     *
+     * @throws IllegalArgumentException if {@code speed} is negative
+     */
+    public Vehicle() {
+        this(0);
     }
 
     /**
@@ -35,6 +44,7 @@ public class Vehicle {
      *
      * @param speed the new speed; must be greater than or equal to 0
      * @throws IllegalArgumentException if {@code speed} is negative
+     * @throws IllegalStateException if {@code passengers} is empty
      */
     public void setSpeed(double speed) {
         if (speed < 0) {

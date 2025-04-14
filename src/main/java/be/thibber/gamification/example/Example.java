@@ -1,4 +1,4 @@
-package be.thibber.gamification;
+package be.thibber.gamification.example;
 
 public class Example {
     /**
@@ -6,7 +6,7 @@ public class Example {
      * @param b Second number
      * @return The sum between {@code a} and {@code b}
      */
-    public  int sum(int a, int b) {
+    public int sum(int a, int b) {
         return a + b;
     }
 
