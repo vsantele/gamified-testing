@@ -2,6 +2,9 @@ package be.thibber.gamification;
 
 import java.util.List;
 
+/**
+ * Polyline is a series of connected points.
+ */
 abstract class PolyLine {
     private List<Coords> points;
 
