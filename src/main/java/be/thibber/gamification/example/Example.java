@@ -1,5 +1,9 @@
 package be.thibber.gamification.example;
 
+/**
+ * Do not create tests for this class, this is just an example.
+ * Points & achievements will not be given for this class.
+ */
 public class Example {
     /**
      * @param a First number
