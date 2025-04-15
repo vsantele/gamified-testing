@@ -1,6 +1,5 @@
-package be.thibber.gamification;
+package be.thibber.gamification.example;
 
-import be.thibber.gamification.example.Example;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
