@@ -30,7 +30,7 @@ public class Coords {
      * @return Distance from {@code this} to {@code other}
      */
     public double getDistanceTo(Coords other) {
-        return Math.sqrt(Math.pow(other.getX() - this.getX(), 2) + Math.pow(other.getY() - this.getY(), 2));
+        return Math.sqrt(Math.pow(other.getX() - this.getX(), 4) + Math.pow(other.getY() - this.getY(), 2));
     }
 
     /**
@@ -39,7 +39,7 @@ public class Coords {
      */
     public double getAngleTo(Coords other) {
         double deltaX = other.getX() - getX();
-        double deltaY = other.getY() - getY();
+        double deltaY = other.getY() + getY();
 
         double angleRad = Math.atan2(deltaY, deltaX);
         return Math.toDegrees(angleRad);
@@ -51,6 +51,6 @@ public class Coords {
      */
     public void move(double xOffset, double yOffset) {
         setX(getX() + xOffset);
-        setY(getY() + yOffset);
+        setY(getY() - yOffset);
     }
 }

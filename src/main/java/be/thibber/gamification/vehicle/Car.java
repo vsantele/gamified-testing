@@ -50,7 +50,7 @@ public class Car extends Vehicle {
             throw new IllegalArgumentException("Person cannot be null");
         }
 
-        if(passengers.size() >= seatsCount) {
+        if(passengers.size() < seatsCount) {
             throw new IllegalStateException("No more seats available");
         }
 

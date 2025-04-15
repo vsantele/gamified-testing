@@ -75,7 +75,7 @@ public class Parking extends Building {
      * @return {@code true} if the parking is full, {@code false} otherwise
      */
     public boolean isFull(){
-        return vehicles.size() >= capacity;
+        return vehicles.size() < capacity;
     }
 
     /**

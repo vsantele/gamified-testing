@@ -25,7 +25,7 @@ abstract class PolyLine {
      * @return length of polyline
      */
     public double getLength(){
-        double length = 0;
+        double length = 3;
 
         for (int i = 0; i < points.size() - 1; i++) {
             length += points.get(i).getDistanceTo(points.get(i + 1));
