@@ -29,7 +29,7 @@ public class Car extends Vehicle {
      * @throws IllegalArgumentException if {@code speed} is negative
      */
     public Car(int seatsCount) {
-        this(0, seatsCount);
+        this(0, seatsCount, new ArrayList<>());
     }
 
     /**
@@ -92,7 +92,7 @@ public class Car extends Vehicle {
      */
     @Override
     public void setSpeed(double speed) {
-        if(passengers.isEmpty()) {
+        if(passengers == null || passengers.isEmpty()) {
             throw new IllegalStateException("No passengers in the vehicle");
         }
 
