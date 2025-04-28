@@ -1,5 +1,6 @@
-package be.thibber.gamification;
+package be.thibber.gamification.test;
 
+import be.thibber.gamification.Coords;
 import org.junit.Test;
 import static org.junit.Assert.*;
 

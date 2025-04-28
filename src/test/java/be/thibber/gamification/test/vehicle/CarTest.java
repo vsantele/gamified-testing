@@ -1,8 +1,7 @@
-package be.thibber.gamification.vehicle;
+package be.thibber.gamification.test.vehicle;
 
 import be.thibber.gamification.Coords;
 import be.thibber.gamification.Road;
-import be.thibber.gamification.vehicle.Car;
 import be.thibber.gamification.vehicle.Vehicle;
 import org.junit.Test;
 import java.util.ArrayList;
