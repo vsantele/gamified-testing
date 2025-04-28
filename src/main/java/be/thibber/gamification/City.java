@@ -84,7 +84,7 @@ public class City {
 
         for (Building building : buildings) {
             if(building instanceof Parking) {
-                count -= ((Parking) building).getCapacity();
+                count += ((Parking) building).getCapacity();
             }
         }
 

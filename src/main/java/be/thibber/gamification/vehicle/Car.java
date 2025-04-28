@@ -92,7 +92,7 @@ public class Car extends Vehicle {
      */
     @Override
     public void setSpeed(double speed) {
-        if(passengers == null || passengers.isEmpty()) {
+        if(speed != 0 && (passengers == null || passengers.isEmpty())) {
             throw new IllegalStateException("No passengers in the vehicle");
         }
 
